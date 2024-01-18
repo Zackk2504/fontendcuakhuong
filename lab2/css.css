@@ -1,0 +1,21 @@
+.hang1{
+    background-color: antiquewhite;
+    border: 2px;
+}
+
+.table{
+    text-align: center;
+    align-items: center;
+}
+
+thead th{
+    text-align: center !important;
+    vertical-align: middle !important;
+    
+}
+table{
+    border: 2px;
+}
+button{
+    margin: 10px 10px 10px 10px;
+}

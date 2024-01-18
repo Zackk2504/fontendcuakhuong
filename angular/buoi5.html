@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/angular/lib/angular.min.js"></script>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+</head>
+<body ng-app="demo">
+    <div ng-controller="democontroller">
+        <h1 class="text-center">ds nhan vien</h1>
+        <table class="table">
+            <tr>
+                <th>STT</th>
+                <th>Ho va ten</th>
+                <th>ngay sinh</th>
+                <th>muc luong</th>
+                <th>gioi tinh</th>
+            </tr>
+            <tr ng-repeat="item in nhanvien | limitTo: number">
+                <td>{{ $index +1}}</td>
+                <td ng-click="sayHello(item.ten)">{{item.ten}} </td>
+                <td ng-bind="item.ngaysinh | date:'dd/MM/yyyy'"></td>
+                <td >{{item.mucluong | currency : '' :0}}d </td>
+                <td>{{item.gioitinh ==0 ? "nam" : "nu"}}</td>
+            </tr>
+        </table>
+        <!-- 
+            tạo 1 select option
+            số bản ghi được hiển thị ra
+            khi thay đổi option thì bản ghi sẽ thay đổi
+        -->
+        <select ng-model="number" name="" id="">
+            <!-- 
+                ng-model: liên kết dữ liệu 2 chiều
+                giữa view và biến chứa dữ liệu
+            -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+
+        </select>
+        
+        <button ng-click="sayHello('chao')">ấn đi</button>
+
+    </div>
+    <script src="/angular/js/buoi5.js"></script>
+</body>
+</html>

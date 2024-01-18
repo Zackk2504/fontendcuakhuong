@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/angular/lib/angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+
+    <div ng-controller="myctrl">
+        <img ng-src="/assi/images/{{student.photo}}" alt="">
+        <ul>
+            <li>Họ và tên: {{student.fullname}}</li>
+            <li>Ngày sinh: {{student.birthday}}</li>
+            <li>Giới tính: {{student.gender}}</li>
+            <li>Điểm trung bình: {{student.mark}}</li>
+        </ul>
+    </div>
+    
+    
+    <script src="/angular/lab4/lab4.js"></script>
+
+    <script src="/angular/lab4/lab4.js"></script>
+</body>
+</html>

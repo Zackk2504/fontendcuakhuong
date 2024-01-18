@@ -1,0 +1,58 @@
+header{
+    position: relative;
+    height: 250px;
+}
+.shopping-mall{
+    position: absolute;
+    bottom: 20px;
+    font-family: small-caps;
+    margin: 25px;
+}
+.shopping-mall>h1{
+    font-family: Impact;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0 0 2px black;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+.shopping-mall>h5{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+.cat-imgge-top{
+    position: absolute;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.col-sm-7 {
+    float: left;
+    width: 50%;
+}
+.col-sm-5{
+    float: right;
+    width: 50%;
+}
+.text-right{
+    position: absolute;
+    right: 200px;
+}
+
+.poly-cart ul{
+    list-style: none;
+}
+.poly-cart{
+    padding: 8px;
+    margin-bottom: 5px;
+}
+.image_800{
+    height: 500px !important ;
+    width: 80% !important;
+}
+
+#accordionExample .list-group {
+    cursor: pointer;
+}
